@@ -1,5 +1,5 @@
 
-Jeg fikk ikke testene på oblig1.zip. Vet ikke om det er jeg som ikke har forstått hvordan jeg får runna mine koder der. Legger derfor her et eksempel på min egen test:
+Jeg fikk ikke testene på oblig1.zip. Vet ikke om det er jeg som ikke har forstått hvordan jeg får runna mine koder der. Legger derfor her et eksempel på min egen test. Tror noe av problemet var at jeg kun gjorde oppgavene ment for dem som jobber alene, og derfor ikke får testet alle kodene. 
 
 
 
