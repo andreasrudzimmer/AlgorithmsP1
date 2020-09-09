@@ -6,35 +6,6 @@ import java.util.NoSuchElementException;
 
 public class Oblig1 {
 
-    public static void main(String[] args) {
-
-        System.out.println("Høyeste tallet i listen er: " + maks(new int[]{1, 2, 3, 333, 100002, 4, 5, 65, 7, 8, 9, 10, 9999}));
-
-        System.out.println("Antall ombyttinger er: " + ombyttinger(new int[]{1, 2, 3, 333, 100002, 4, 5, 65, 7, 8, 9, 10, 9999}));
-
-        System.out.println("Antall forskjellige tall i listen er: " + antallUlikeSotert(new int[]{1,2,2,3,4,5,5,6,}));
-
-        int a[] = {1, -1, -2, 2, 6, 2, 8, 13};
-        System.out.print("Listen med partall på venstre side og oddetall på høyre: ");
-        delsortering(a);
-        System.out.println();
-        System.out.print("Listen flyttet alle elementer en posisjon: ");
-
-        char b[] = {'a','b','c','d','e','f','g','h','i','j'};
-        rotasjon(b);
-
-        System.out.println();
-        System.out.print("Antall forskjellige siffer i listen: ");
-        int c[] = {1,2,2,2,3,2,1,4};
-        System.out.println(antallUlikeUsotert(c));
-
-        String k[] = {"Halla"};
-        String l[] = {"Halla"};
-        
-        System.out.print("Listene sammenflettet gir: ");
-        System.out.println(flett("HAlla", "Halla"));
-    }
-
 
     ///Oppgave 1, del 1
 
@@ -104,6 +75,7 @@ else {
         return teller;
     }
 
+    
     /// Oppgave 3
     public static int antallUlikeUsotert(int[] a){
 
@@ -148,7 +120,7 @@ else {
         for (int i = 0; i < a.length; i++) {
 
         }
-        System.out.print(Arrays.toString(a));
+       
     }
 
     ///Oppgave 5
@@ -159,7 +131,6 @@ else {
             a[i]=a[i-1];
         }
         a[0] = huske;
-        System.out.print(Arrays.toString(a));
     }
 
 
