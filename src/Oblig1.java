@@ -1,32 +1,32 @@
-import javax.crypto.spec.PSource;
-import java.util.Arrays;
 import java.util.NoSuchElementException;
-
-/// Denne obligen er levert av: Andreas Rud Zimmer, S344051.
+import java.util.Arrays;
 
 public class Oblig1 {
 
 
 
-        ///Oppgave 1, del 1
+/// Denne obligen er levert av: Andreas Rud Zimmer, S344051.
 
-        public static int maks(int[] a) {
 
-            if(a.length==0) {
-                throw new NoSuchElementException("The array is empty");
-            } else {
-                int minus = 1;
-                int holder = 0;
-                for (int i = 0; i < a.length - minus; i++) {
-                    if (a[i] > a[i + 1]) {
-                        holder = a[i + 1];
-                        a[i + 1] = a[i];
-                        a[i] = holder;
+    ///Oppgave 1, del 1
 
-                    }
+
+    public static int maks(int[] a) {
+        if (a.length == 0) {
+            throw new NoSuchElementException("The array is empty");
+        } else {
+            int minus = 1;
+            int holder = 0;
+            for (int i = 0; i < a.length - minus; i++) {
+                if (a[i] > a[i + 1]) {
+                    holder = a[i + 1];
+                    a[i + 1] = a[i];
+                    a[i] = holder;
+
                 }
-                return a[a.length - minus];
             }
+            return a[a.length - minus];
+        }
     }
 
 
@@ -56,79 +56,79 @@ public class Oblig1 {
 
 
     ///Oppgave 2
+    public static int antallUlikeSortert(int[] a) {
 
-
-    public static int antallUlikeSortert(int[] a){
-
-    int teller = 1;
-    if (a.length>0){
-        for(int i = 0; i < a.length-1; i++) {
-            if (a[i] <= a[i + 1]) {
-                if (a[i] != a[i + 1]) {
-                    teller++;
+        int teller = 1;
+        if (a.length > 0) {
+            for (int i = 0; i < a.length - 1; i++) {
+                if (a[i] <= a[i + 1]) {
+                    if (a[i] != a[i + 1]) {
+                        teller++;
+                    }
+                } else {
+                    throw new IllegalStateException("Arrayet er ikke sortert!");
                 }
-            } else {
-                throw new IllegalStateException("Arrayet er ikke sortert!");
             }
-        }
 
-    }
-    else {
-        teller = 0;
-    }
-    return teller;
+        } else {
+            teller = 0;
+        }
+        return teller;
     }
 
     /// Oppgave 3
-    public static int antallUlikeUsortert(int[] a){
-
-    if(a.length!=0) {
-        int tall = 1;
-        int j = 0;
-        for (int i = 1; i < a.length; i++) {
-            for (j = 0; j < i; j++) {
-                if (a[i] == a[j])
-                    break;
+    public static int antallUlikeUsortert(int[] a) {
+        if (a.length != 0) {
+            int tall = 1;
+            int j = 0;
+            for (int i = 1; i < a.length; i++) {
+                for (j = 0; j < i; j++) {
+                    if (a[i] == a[j])
+                        break;
+                }
+                if (i == j)
+                    tall++;
             }
-            if (i == j)
-                tall++;
+            return tall;
+        } else {
+            return 0;
         }
-        return tall;
-    } else {
-        return 0;
-    }
     }
 
 
     /// Oppgave 4
     public static void delsortering(int[] a){
+        int venstre = 0;
+        int høyre = a.length - 1;
+        int odd = 0;
 
-        int venstre = 0, høyre = a.length - 1;
-        while (venstre < høyre)
-        {
-            while (a[venstre]%2 == 0 && venstre < høyre)
-                venstre++;
+        try {
+            while (venstre < høyre) {
+                while (a[venstre] % 2 != 0) {
+                    venstre++;
+                    odd++;
+                }
 
-            while (a[høyre]%2 == 1 && venstre < høyre)
-                høyre--;
+                while (venstre < høyre && a[høyre] % 2 == 0) {
+                    høyre--;
+                }
 
-
-            if (venstre < høyre)
-            {
-                int temp = a[venstre];
-                a[venstre] = a[høyre];
-                a[høyre] = temp;
-                venstre++;
-                høyre--;
+                int holder = a[venstre];
+                if (venstre < høyre) {
+                    holder = a[venstre];
+                    a[venstre] = a[høyre];
+                    a[høyre] = holder;
+                }
             }
+        } catch (Exception e) {
+            // Ignorerer, og sorter under
         }
-        for (int i = 0; i < a.length; i++) {
-
-        }
+        Arrays.sort(a, 0, odd);
+        Arrays.sort(a, odd, a.length);
     }
 
-    ///Oppgave 5
 
+    ///Oppgave 5
     public static void rotasjon(char[] a){
         if(a.length==0) {
 
@@ -167,8 +167,4 @@ public class Oblig1 {
 }
 
 
-    ///Oppgave 7, b
-
-
-            /// Dessverre ikke rukket å gjøre
-
+///Oppgave 7, b
