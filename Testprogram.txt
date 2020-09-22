@@ -1,0 +1,49 @@
+
+Jeg fikk ikke testene på oblig1.zip. Vet ikke om det er jeg som ikke har forstått hvordan jeg får runna mine koder der. Legger derfor her et eksempel på min egen test. Tror noe av problemet var at jeg kun gjorde oppgavene ment for dem som jobber alene, og derfor ikke får testet alle kodene. 
+
+
+
+
+
+
+
+RESULTATET AV MINE TESTER:
+
+Høyeste tallet i listen er: 100002
+Antall ombyttinger er: 8
+Antall forskjellige tall i listen er: 6
+Listen med partall på venstre side og oddetall på høyre: [8, 2, -2, 2, 6, -1, 1, 13]
+Listen flyttet alle elementer en posisjon: [j, a, b, c, d, e, f, g, h, i]
+Antall forskjellige siffer i listen: 4
+Listene sammenflettet gir: HHAallllaa
+
+TESTENE JEG KJØRTE:
+
+ public static void main(String[] args) {
+
+        System.out.println("Høyeste tallet i listen er: " + maks(new int[]{1, 2, 3, 333, 100002, 4, 5, 65, 7, 8, 9, 10, 9999}));
+
+        System.out.println("Antall ombyttinger er: " + ombyttinger(new int[]{1, 2, 3, 333, 100002, 4, 5, 65, 7, 8, 9, 10, 9999}));
+
+        System.out.println("Antall forskjellige tall i listen er: " + antallUlikeSotert(new int[]{1,2,2,3,4,5,5,6,}));
+
+        int a[] = {1, -1, -2, 2, 6, 2, 8, 13};
+        System.out.print("Listen med partall på venstre side og oddetall på høyre: ");
+        delsortering(a);
+        System.out.println();
+        System.out.print("Listen flyttet alle elementer en posisjon: ");
+
+        char b[] = {'a','b','c','d','e','f','g','h','i','j'};
+        rotasjon(b);
+
+        System.out.println();
+        System.out.print("Antall forskjellige siffer i listen: ");
+        int c[] = {1,2,2,2,3,2,1,4};
+        System.out.println(antallUlikeUsotert(c));
+
+        String k[] = {"Halla"};
+        String l[] = {"Halla"};
+
+        System.out.print("Listene sammenflettet gir: ");
+        System.out.println(flett("HAlla", "Halla"));
+    }
