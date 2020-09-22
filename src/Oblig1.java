@@ -13,7 +13,7 @@ public class Oblig1 {
 
     public static int maks(int[] a) {
         if (a.length == 0) {
-            throw new NoSuchElementException("The array is empty");
+            throw new NoSuchElementException("Listen er tom");
         } else {
             int minus = 1;
             int holder = 0;
@@ -66,7 +66,7 @@ public class Oblig1 {
                         teller++;
                     }
                 } else {
-                    throw new IllegalStateException("Arrayet er ikke sortert!");
+                    throw new IllegalStateException("Listen er usortert!");
                 }
             }
 
@@ -130,7 +130,7 @@ public class Oblig1 {
 
     ///Oppgave 5
     public static void rotasjon(char[] a){
-        if(a.length==0) {
+        if(a.length == 0) {
 
         } else {
             char huske = a[a.length - 1];
@@ -163,8 +163,37 @@ public class Oblig1 {
         }
         return sammensattArr.toString();
     }
+    ///Oppgave 7, b
+
+    public static String flett(String... s) {
+        String[] arrayet= s;
+        String message = "";
+        int number = 0;
+        int a = 0;
+        int b = 1;
+        int antallOrd = 0;
+        for(int i = 0; i<arrayet.length;i++) {
+            antallOrd+=arrayet[i].length();
+        }
+        while(number<antallOrd) {
+            for (int i = 0; i < arrayet.length; i++) {
+                try {
+                    String bokstav = arrayet[i].substring(a, b);
+                    message += bokstav;
+                } catch (Exception e) {
+
+                }
+            }
+            a++;
+            b++;
+            number++;
+        }
+        return message;
+    }
+
+
 
 }
 
 
-///Oppgave 7, b
+

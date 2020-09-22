@@ -1,0 +1,18 @@
+
+resultatet fra testen:
+
+/Library/Java/JavaVirtualMachines/jdk-14.0.2.jdk/Contents/Home/bin/java -ea -Didea.test.cyclic.buffer.size=1048576 -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64824:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar:/Users/andreasrudzimmer/.m2/repository/org/junit/platform/junit-platform-launcher/1.4.2/junit-platform-launcher-1.4.2.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit5-rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit-rt.jar:/Users/andreasrudzimmer/Documents/OsloMet/S3/DATS2300 - Algoritmer/Prosjekter/Oblig1-Algoritmer/out/production/Oblig1-Algoritmer:/Users/andreasrudzimmer/.m2/repository/org/junit/jupiter/junit-jupiter/5.4.2/junit-jupiter-5.4.2.jar:/Users/andreasrudzimmer/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.4.2/junit-jupiter-api-5.4.2.jar:/Users/andreasrudzimmer/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/andreasrudzimmer/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/Users/andreasrudzimmer/.m2/repository/org/junit/platform/junit-platform-commons/1.4.2/junit-platform-commons-1.4.2.jar:/Users/andreasrudzimmer/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.4.2/junit-jupiter-params-5.4.2.jar:/Users/andreasrudzimmer/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.4.2/junit-jupiter-engine-5.4.2.jar:/Users/andreasrudzimmer/.m2/repository/org/junit/platform/junit-platform-engine/1.4.2/junit-platform-engine-1.4.2.jar com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 Oblig1Test
+
+
+
+
+
+
+
+
+
+
+
+
+
+Process finished with exit code 0
