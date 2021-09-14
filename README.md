@@ -2,4 +2,4 @@
 
 Andreas Rud Zimmer, S344051   
 
-Andreas har gjort hele oppgaven. 
+by Andreas Rud Zimmer
